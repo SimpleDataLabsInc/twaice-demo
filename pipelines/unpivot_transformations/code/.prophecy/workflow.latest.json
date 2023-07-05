@@ -1,0 +1,818 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "647",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "ashishprophecy.io_team.twaicedemo.functions",
+      "sharedFunctionPackageNames" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "unpivot_transformations",
+    "configurationVersion" : "v1"
+  },
+  "connections" : [ {
+    "id" : "bv4DCvVH5qCIyeJ5LhIB5$$gED_8cBXY5-83KGaPd3XP",
+    "source" : "3SPtIgNymEVh8OgYCUFDN$$XARqVNK0B0-dwWJdZ2rC_",
+    "sourcePort" : "UVAZeDlJ88idPibyhQeEI$$jF3nQEZkk9JYvRtniT_hN",
+    "target" : "_XCgIK2VWK8tcPSCS6_rU$$heG310NG2JtWMmnrW_xcB",
+    "targetPort" : "3_pwCdCCwPxQsTO0LK-SL$$Br28h2PKj76rTZU5PniDt"
+  }, {
+    "id" : "iSL7QxgBG6hgTXx73soFY$$oDNeP1WgBZGjDDQaLbkxV",
+    "source" : "_XCgIK2VWK8tcPSCS6_rU$$heG310NG2JtWMmnrW_xcB",
+    "sourcePort" : "5NN-8BF_hVtiwT2rsRSLS$$MMZ1PGVFSVuGK7eWqrOkU",
+    "target" : "CXIVw50ftlJTzRMa7msS-$$kVvJjTtG3_WFOEw0Oqo8H",
+    "targetPort" : "DG4x8NCJIe6CUE28GPpcj$$icv4wzUUejYt75Eas0NwQ"
+  }, {
+    "id" : "GqJwcjMxbNPxDEkP1QQZK",
+    "source" : "3SPtIgNymEVh8OgYCUFDN$$XARqVNK0B0-dwWJdZ2rC_",
+    "sourcePort" : "UVAZeDlJ88idPibyhQeEI$$jF3nQEZkk9JYvRtniT_hN",
+    "target" : "Mo4MFvyWIzWgoapCzkNij$$Qkrojk-n1ORwyXbBPmZVr",
+    "targetPort" : "NolhwIrXcZdmMRNXkibr5$$cqWLr8wy-Z55joPimv3pi"
+  }, {
+    "id" : "pftIw2-tJdFsIUEJAYfz0$$nX6encc32fZZZuqHE1ywF",
+    "source" : "iAoP-vmi3IuAZPWTqCfsx$$7zagQwi3nLChDElqCCz8V",
+    "sourcePort" : "Z6QL1udJjAoKmwB7YpJJq$$BtnMws_XB1wU5RXwb21e_",
+    "target" : "b6KdGKiY8fWgJasRUxk7W$$ms5q0AoHNwCuzcQ8XBcuU",
+    "targetPort" : "6B-ropcBV5zp0nDbLmLar$$ZpnFLlzSXjPdwjWkBOFDG"
+  }, {
+    "id" : "uOmW5rq9JyyAxaR9HK8cE",
+    "source" : "_XCgIK2VWK8tcPSCS6_rU$$heG310NG2JtWMmnrW_xcB",
+    "sourcePort" : "5NN-8BF_hVtiwT2rsRSLS$$MMZ1PGVFSVuGK7eWqrOkU",
+    "target" : "2T7-teApNgrDd5Q3EUbTH$$5JByv_gZd0XlbMTzbOTm8",
+    "targetPort" : "QlJPAZuEk04avoQwQ_xuW$$ONxOX_Fbo0LU-Z7QAiKR4"
+  }, {
+    "id" : "6df77fv6DPGzSDhWcSOLr$$cj47pBrsV8mVpS8okmkbM",
+    "source" : "2T7-teApNgrDd5Q3EUbTH$$5JByv_gZd0XlbMTzbOTm8",
+    "sourcePort" : "Cg08kzFkIpU2yk10klepI$$ExxxWfZ3PJmu_9ZoFNTsf",
+    "target" : "iAoP-vmi3IuAZPWTqCfsx$$7zagQwi3nLChDElqCCz8V",
+    "targetPort" : "ouxBVyf8meetUG6tVrt06$$Nxy_llzCIiUat9pfUB03x"
+  }, {
+    "id" : "AOobuoMJRktee_TXuUsoR$$ia4e-UVCib7KnxWvzpRY8",
+    "source" : "b6KdGKiY8fWgJasRUxk7W$$ms5q0AoHNwCuzcQ8XBcuU",
+    "sourcePort" : "cahYGcvnjiuz8vUFo-k-y$$FGua1crEfJy5cUASRVKxu",
+    "target" : "BZ9zvIGSppeMdTG8lB2r2$$0Mzpk8cKIIvu0XZi_xHU8",
+    "targetPort" : "fRvYR-jn1oAOEUUwBCO4t$$LCgnLRJma1nQUBe4M84dx"
+  }, {
+    "id" : "rKe1xmYomdvmgkRgZ2CpF$$J1enb5RedZLuS2yS8Ro2S",
+    "source" : "Mo4MFvyWIzWgoapCzkNij$$Qkrojk-n1ORwyXbBPmZVr",
+    "sourcePort" : "o2zwNKYA24Flc5n0e3fuK$$FUaRS-SN6mIJaZy4pclpO",
+    "target" : "ybq-F8XAyO66pFH6iWCZM$$Pwi9oaYNTs2KkJZDzRgzx",
+    "targetPort" : "BEy-dMmuigwx5Yd6sGrjR$$d4hAgdP-ccyOR1aYbzyHg"
+  } ],
+  "processes" : {
+    "Mo4MFvyWIzWgoapCzkNij$$Qkrojk-n1ORwyXbBPmZVr" : {
+      "id" : "Mo4MFvyWIzWgoapCzkNij$$Qkrojk-n1ORwyXbBPmZVr",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "byYear",
+        "slug" : "byYear",
+        "x" : 360,
+        "y" : 520,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "NolhwIrXcZdmMRNXkibr5$$cqWLr8wy-Z55joPimv3pi",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Year",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Q1",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Q2",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Q3",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Q4",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "o2zwNKYA24Flc5n0e3fuK$$FUaRS-SN6mIJaZy4pclpO",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "allIns" : false,
+        "doPivot" : false,
+        "aggregate" : [ {
+          "target" : "total_sales",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first(Q1) + first(Q2) + first(Q3) + first(Q4)"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "allowSelection" : true,
+        "pivotColumn" : null,
+        "pivotValues" : [ ],
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ "NolhwIrXcZdmMRNXkibr5$$cqWLr8wy-Z55joPimv3pi##Q3", "NolhwIrXcZdmMRNXkibr5$$cqWLr8wy-Z55joPimv3pi##Year", "NolhwIrXcZdmMRNXkibr5$$cqWLr8wy-Z55joPimv3pi##Q4", "NolhwIrXcZdmMRNXkibr5$$cqWLr8wy-Z55joPimv3pi##Q1", "NolhwIrXcZdmMRNXkibr5$$cqWLr8wy-Z55joPimv3pi##Q2" ],
+        "groupBy" : [ {
+          "target" : "Year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Year"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ]
+      }
+    },
+    "iAoP-vmi3IuAZPWTqCfsx$$7zagQwi3nLChDElqCCz8V" : {
+      "id" : "iAoP-vmi3IuAZPWTqCfsx$$7zagQwi3nLChDElqCCz8V",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "reformat",
+        "slug" : "reformat",
+        "x" : 720,
+        "y" : 320,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ouxBVyf8meetUG6tVrt06$$Nxy_llzCIiUat9pfUB03x",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Year",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "quarter",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sales",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "Z6QL1udJjAoKmwB7YpJJq$$BtnMws_XB1wU5RXwb21e_",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "Year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Year"
+          },
+          "description" : ""
+        }, {
+          "target" : "quarter",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "quarter"
+          },
+          "description" : ""
+        }, {
+          "target" : "sales",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cast(sales as double) "
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "ouxBVyf8meetUG6tVrt06$$Nxy_llzCIiUat9pfUB03x##sales", "ouxBVyf8meetUG6tVrt06$$Nxy_llzCIiUat9pfUB03x##Year", "ouxBVyf8meetUG6tVrt06$$Nxy_llzCIiUat9pfUB03x##quarter" ]
+      }
+    },
+    "CXIVw50ftlJTzRMa7msS-$$kVvJjTtG3_WFOEw0Oqo8H" : {
+      "id" : "CXIVw50ftlJTzRMa7msS-$$kVvJjTtG3_WFOEw0Oqo8H",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "clean",
+        "slug" : "clean",
+        "x" : 520,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "DG4x8NCJIe6CUE28GPpcj$$icv4wzUUejYt75Eas0NwQ",
+          "slug" : "unPivot",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Year",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "quarter",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sales",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "OA1obYy0DiDH2F4TNM0y3$$auSierqVac7qpL92BiMA7",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "Year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Year"
+          },
+          "description" : ""
+        }, {
+          "target" : "quarter",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "quarter"
+          },
+          "description" : ""
+        }, {
+          "target" : "sales",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "concat('€', sales, 'M')"
+          },
+          "description" : ""
+        }, {
+          "target" : "sales_in_billions",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "concat('€', (sales / 1000), 'B')"
+          },
+          "description" : ""
+        } ],
+        "importString" : "Year,Year\nquarter,quarter\nsales,``concat(sales, ' Million USD')``",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "DG4x8NCJIe6CUE28GPpcj$$icv4wzUUejYt75Eas0NwQ##Year", "DG4x8NCJIe6CUE28GPpcj$$icv4wzUUejYt75Eas0NwQ##quarter", "DG4x8NCJIe6CUE28GPpcj$$icv4wzUUejYt75Eas0NwQ##sales" ]
+      }
+    },
+    "_XCgIK2VWK8tcPSCS6_rU$$heG310NG2JtWMmnrW_xcB" : {
+      "id" : "_XCgIK2VWK8tcPSCS6_rU$$heG310NG2JtWMmnrW_xcB",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "unPivot",
+        "slug" : "unPivot",
+        "x" : 320,
+        "y" : 220,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "3_pwCdCCwPxQsTO0LK-SL$$Br28h2PKj76rTZU5PniDt",
+          "slug" : "quarterly_sales_data",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Year",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Q1",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Q2",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Q3",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Q4",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "5NN-8BF_hVtiwT2rsRSLS$$MMZ1PGVFSVuGK7eWqrOkU",
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Year",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "quarter",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sales",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true
+      },
+      "properties" : {
+        "script" : "out0 = quarterly_sales_data\\\n.selectExpr(\n    \"Year\",\n     \"stack(4, 'Q1', Q1, 'Q2', Q2, 'Q3', Q3, 'Q4', Q4) as (quarter, sales)\"\n    )",
+        "scriptMethodHeader" : "def Script(spark: SparkSession, quarterly_sales_data: DataFrame) -> DataFrame:",
+        "scriptMethodFooter" : "    return out0"
+      }
+    },
+    "BZ9zvIGSppeMdTG8lB2r2$$0Mzpk8cKIIvu0XZi_xHU8" : {
+      "id" : "BZ9zvIGSppeMdTG8lB2r2$$0Mzpk8cKIIvu0XZi_xHU8",
+      "component" : "OrderBy",
+      "metadata" : {
+        "label" : "OrderBy",
+        "slug" : "OrderBy",
+        "x" : 1100,
+        "y" : 320,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "fRvYR-jn1oAOEUUwBCO4t$$LCgnLRJma1nQUBe4M84dx",
+          "slug" : "byYearPivot",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Year",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "total_sales",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "OkDbttOLC_KBBCthhWj29$$JF8VffN5-SA8NZfNusayW",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "fRvYR-jn1oAOEUUwBCO4t$$LCgnLRJma1nQUBe4M84dx##Year" ],
+        "orders" : [ {
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Year"
+          },
+          "sortType" : "asc"
+        } ]
+      }
+    },
+    "2T7-teApNgrDd5Q3EUbTH$$5JByv_gZd0XlbMTzbOTm8" : {
+      "id" : "2T7-teApNgrDd5Q3EUbTH$$5JByv_gZd0XlbMTzbOTm8",
+      "component" : "Deduplicate",
+      "metadata" : {
+        "label" : "dedup",
+        "slug" : "dedup",
+        "x" : 520,
+        "y" : 320,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "QlJPAZuEk04avoQwQ_xuW$$ONxOX_Fbo0LU-Z7QAiKR4",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Year",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "quarter",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sales",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "Cg08kzFkIpU2yk10klepI$$ExxxWfZ3PJmu_9ZoFNTsf",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "dedupColumns" : [ {
+          "colName" : "Year"
+        }, {
+          "colName" : "quarter"
+        } ],
+        "dedupType" : "first",
+        "columnsSelector" : [ "QlJPAZuEk04avoQwQ_xuW$$ONxOX_Fbo0LU-Z7QAiKR4##quarter", "QlJPAZuEk04avoQwQ_xuW$$ONxOX_Fbo0LU-Z7QAiKR4##Year" ],
+        "orders" : [ ],
+        "useOrderBy" : false
+      }
+    },
+    "ybq-F8XAyO66pFH6iWCZM$$Pwi9oaYNTs2KkJZDzRgzx" : {
+      "id" : "ybq-F8XAyO66pFH6iWCZM$$Pwi9oaYNTs2KkJZDzRgzx",
+      "component" : "OrderBy",
+      "metadata" : {
+        "label" : "OrderByY",
+        "slug" : "OrderByY",
+        "x" : 620,
+        "y" : 540,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "BEy-dMmuigwx5Yd6sGrjR$$d4hAgdP-ccyOR1aYbzyHg",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Year",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "total_sales",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "DlC4sPRdm9eh1O5-IolaB$$yOL3cLIA9y2QcrU07FRmL",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "BEy-dMmuigwx5Yd6sGrjR$$d4hAgdP-ccyOR1aYbzyHg##Year" ],
+        "orders" : [ {
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Year"
+          },
+          "sortType" : "asc"
+        } ]
+      }
+    },
+    "b6KdGKiY8fWgJasRUxk7W$$ms5q0AoHNwCuzcQ8XBcuU" : {
+      "id" : "b6KdGKiY8fWgJasRUxk7W$$ms5q0AoHNwCuzcQ8XBcuU",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "byYearPivot",
+        "slug" : "byYearPivot",
+        "x" : 920,
+        "y" : 320,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "6B-ropcBV5zp0nDbLmLar$$ZpnFLlzSXjPdwjWkBOFDG",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Year",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "quarter",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "sales",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "cahYGcvnjiuz8vUFo-k-y$$FGua1crEfJy5cUASRVKxu",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "allIns" : false,
+        "doPivot" : false,
+        "aggregate" : [ {
+          "_row_id" : "c_35",
+          "target" : "total_sales",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sum(sales)"
+          },
+          "description" : ""
+        } ],
+        "allowSelection" : true,
+        "pivotColumn" : null,
+        "pivotValues" : [ ],
+        "activeTab" : "groupBy",
+        "columnsSelector" : [ "6B-ropcBV5zp0nDbLmLar$$ZpnFLlzSXjPdwjWkBOFDG##Year", "6B-ropcBV5zp0nDbLmLar$$ZpnFLlzSXjPdwjWkBOFDG##sales" ],
+        "groupBy" : [ {
+          "target" : "Year",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Year"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ]
+      }
+    },
+    "3SPtIgNymEVh8OgYCUFDN$$XARqVNK0B0-dwWJdZ2rC_" : {
+      "id" : "3SPtIgNymEVh8OgYCUFDN$$XARqVNK0B0-dwWJdZ2rC_",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "quarterly_sales_data",
+        "slug" : "quarterly_sales_data",
+        "x" : 120,
+        "y" : 320,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "UVAZeDlJ88idPibyhQeEI$$jF3nQEZkk9JYvRtniT_hN",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/sales_dataset"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  }
+}

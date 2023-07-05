@@ -1,0 +1,154 @@
+name: twaice-demo
+description: ''
+version: '1.0'
+author: ashish@prophecy.io
+language: python
+buildSystem: ''
+buildSystemDetails:
+  artefactID: twaicedemo
+  parentArtefactID: ashishprophecy.io_team
+  buildSystem: wheel
+  author: null
+  createdAt: '2023-07-04 12:38:38'
+pipelines:
+  pipelines/data-analysis-lookup:
+    name: data-analysis-lookup
+    description: ''
+    author: ashish@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2023-07-04 12:38:38'
+    datasets:
+      inputs:
+      - datasets/laptop_data
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+  pipelines/timestamp_conversion_example:
+    name: timestamp_conversion_example
+    description: ''
+    author: ashish@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2023-07-04 13:49:52'
+    datasets:
+      inputs:
+      - datasets/user_dataset
+      outputs:
+      - datasets/user_data_cleaned
+    subgraphs: []
+    dependencies: {}
+  pipelines/unpivot_transformations:
+    name: unpivot_transformations
+    description: ''
+    author: ashish@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2023-07-04 14:23:44'
+    datasets:
+      inputs:
+      - datasets/sales_dataset
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets:
+  datasets/laptop_data:
+    name: laptop_data
+    description: ''
+    author: ashish@prophecy.io
+    createdAt: '2023-07-04 13:08:32'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 647
+        datasetType: File
+        description: ''
+        author: ashish@prophecy.io
+        createdAt: '2023-07-04 13:08:32'
+  datasets/user_dataset:
+    name: user_dataset
+    description: ''
+    author: ashish@prophecy.io
+    createdAt: '2023-07-04 13:53:01'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 647
+        datasetType: File
+        description: ''
+        author: ashish@prophecy.io
+        createdAt: '2023-07-04 13:53:01'
+  datasets/user_data_cleaned:
+    name: user_data_cleaned
+    description: ''
+    author: ashish@prophecy.io
+    createdAt: '2023-07-04 14:00:43'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 647
+        datasetType: File
+        description: ''
+        author: ashish@prophecy.io
+        createdAt: '2023-07-04 14:00:43'
+  datasets/sales_dataset:
+    name: sales_dataset
+    description: ''
+    author: ashish@prophecy.io
+    createdAt: '2023-07-04 14:37:20'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 647
+        datasetType: File
+        description: ''
+        author: ashish@prophecy.io
+        createdAt: '2023-07-04 14:37:20'
+templates: {}
+jobs:
+  jobs/demo_job:
+    name: demo_job
+    description: ''
+    fabricUID: 1527
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0 0 0 1/1 * ? *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines:
+    - pipelines/data-analysis-lookup
+    - pipelines/timestamp_conversion_example
+    - pipelines/unpivot_transformations
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2023-07-05 08:12:41'
+    author: ashish@prophecy.io
+functions:
+  author: null
+  createdAt: '2023-07-04 12:38:38'
+  gems: {}
+  udfs: {}
+  udafs: {}
+  expressions: {}
+subgraphs: {}
+sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies: '[]'
+projectDependencies: {}
+pipelineConfigurations: {}

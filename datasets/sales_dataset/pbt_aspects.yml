@@ -1,0 +1,46 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: id
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Year
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Q1
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Q2
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Q3
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Q4
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

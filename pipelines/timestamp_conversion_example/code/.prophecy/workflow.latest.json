@@ -1,0 +1,366 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "647",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "ashishprophecy.io_team.twaicedemo.functions",
+      "sharedFunctionPackageNames" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "timestamp_conversion_example",
+    "configurationVersion" : "v1"
+  },
+  "connections" : [ {
+    "id" : "taiKNsB0p8ZoxqBpNlCP4",
+    "source" : "NUlYA19MM5pB86DmMrnOd$$1OTUHVJqTkl5F2miTVJGv",
+    "sourcePort" : "kcpkWpFzBeuY14ucKGOBV$$LDxpwplONG9O1ah6mMGnX",
+    "target" : "PwKGKNBPAQ_n33LZv_7xS$$Ml8-3KFzsUMEGEsdOergj",
+    "targetPort" : "B5vcCIKjSh4p7RcVMj8yN$$uGJxXHwosXU51w2t5s1_S"
+  }, {
+    "id" : "KRQRkKPtk4vcIeoiuKzUb",
+    "source" : "PwKGKNBPAQ_n33LZv_7xS$$Ml8-3KFzsUMEGEsdOergj",
+    "sourcePort" : "oW-GwLD6OR07J34xw2FkU$$aDmCg6RvOdQ3ZHP9D93GB",
+    "target" : "I7EBJoVJbxn_D19DQplqY$$rwi7eo-Pu_eqDJXgsPZIf",
+    "targetPort" : "5iRRDUESYoV2jq0vFpmpb$$1wvv2Jz92Ka0HN7_X1bzD"
+  } ],
+  "processes" : {
+    "NUlYA19MM5pB86DmMrnOd$$1OTUHVJqTkl5F2miTVJGv" : {
+      "id" : "NUlYA19MM5pB86DmMrnOd$$1OTUHVJqTkl5F2miTVJGv",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "user_data",
+        "slug" : "user_data",
+        "x" : 500,
+        "y" : 360,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "kcpkWpFzBeuY14ucKGOBV$$LDxpwplONG9O1ah6mMGnX",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/user_dataset"
+      }
+    },
+    "I7EBJoVJbxn_D19DQplqY$$rwi7eo-Pu_eqDJXgsPZIf" : {
+      "id" : "I7EBJoVJbxn_D19DQplqY$$rwi7eo-Pu_eqDJXgsPZIf",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "user_final_data",
+        "slug" : "user_final_data",
+        "x" : 1340,
+        "y" : 360,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "5iRRDUESYoV2jq0vFpmpb$$1wvv2Jz92Ka0HN7_X1bzD",
+          "slug" : "convert_timestamp",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "userid",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "region",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "created_at_ts",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "created_at_ts2",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "created_at_ts3",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/user_data_cleaned"
+      }
+    },
+    "PwKGKNBPAQ_n33LZv_7xS$$Ml8-3KFzsUMEGEsdOergj" : {
+      "id" : "PwKGKNBPAQ_n33LZv_7xS$$Ml8-3KFzsUMEGEsdOergj",
+      "component" : "SchemaTransform",
+      "metadata" : {
+        "label" : "SchemaTransform_1",
+        "slug" : "SchemaTransform_1",
+        "x" : 940,
+        "y" : 360,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "B5vcCIKjSh4p7RcVMj8yN$$uGJxXHwosXU51w2t5s1_S",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "userid",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "created_at",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "region",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "oW-GwLD6OR07J34xw2FkU$$aDmCg6RvOdQ3ZHP9D93GB",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "sql",
+        "importString" : "",
+        "transformations" : [ {
+          "MissingColumn" : {
+            "sourceColumn" : "",
+            "defaultValue" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : ""
+          },
+          "kind" : "AddReplaceColumn",
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          },
+          "AddReplaceColumn" : {
+            "sourceColumn" : "created_at_ts",
+            "expression" : {
+              "format" : "sql",
+              "expression" : "to_timestamp(created_at,'MM-dd-yy HH:mm:ss')"
+            }
+          }
+        }, {
+          "MissingColumn" : {
+            "sourceColumn" : "",
+            "defaultValue" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : ""
+          },
+          "kind" : "AddReplaceColumn",
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          },
+          "AddReplaceColumn" : {
+            "sourceColumn" : "created_at_ts2",
+            "expression" : {
+              "format" : "sql",
+              "expression" : "date_format(created_at_ts,'MM-dd-yyyy HH:mm:ss SSS')"
+            }
+          }
+        }, {
+          "MissingColumn" : {
+            "sourceColumn" : "",
+            "defaultValue" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : ""
+          },
+          "kind" : "AddReplaceColumn",
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          },
+          "AddReplaceColumn" : {
+            "sourceColumn" : "created_at_ts3",
+            "expression" : {
+              "format" : "sql",
+              "expression" : "date_format(created_at_ts,'yyyy-mm-dd HH->mm->ss SSS')"
+            }
+          }
+        }, {
+          "MissingColumn" : {
+            "sourceColumn" : "",
+            "defaultValue" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : "created_at"
+          },
+          "kind" : "DropColumn",
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          },
+          "AddReplaceColumn" : {
+            "sourceColumn" : "",
+            "expression" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          }
+        } ],
+        "activeTab" : "transformations",
+        "columnsSelector" : [ "B5vcCIKjSh4p7RcVMj8yN$$uGJxXHwosXU51w2t5s1_S##created_at" ]
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  }
+}
